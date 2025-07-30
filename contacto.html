@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contáctenos</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+  <style>
+    .contacto -card {
+      background-color: #eee;
+      height: 180px;
+      border-radius: 8px;
+    }
+    .contacto -title {
+      font-weight: bold;
+    }
+    .nav-link.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    .star-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .star-content .line {
+      width: 15rem;
+      height: 0.8rem;
+      margin: 0 10px;
+      border-radius: 0.5rem;
+    }
+  </style>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="contacto.html">PORTAFOLIO</a>
+  <div class="collapse navbar-collapse justify-content-end">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html"target="_blank"onclick="mostrarSeccion('inicio')">INICIO</a></li>
+      <li class="nav-item"><a class="nav-link" href="acerca de mi.html"target="_blank" onclick="mostrarSeccion('acerca de mi')" >ACERCA DE MÍ</a></li>
+      <li class="nav-item"><a class="nav-link" href="portafolio.html"target="_blank"onclick="mostrarSeccion('portafolio')">PORTAFOLIO</a></li>
+      <li class="nav-item"><a class="nav-link active" href="contacto.html"target="_blank"onclick="mostrarSeccion('contacto')">CONTACTO</a></li>
+    </ul>
+  </div>
+</nav>
+    <h3 class="font-weight-bold text-center">Contácto</h3>
+  <div class="star-content">
+    <span class="line bg-success"></span>
+    <i class="fa fa-star fa-3x text-success"></i>
+    <span class="line bg-success"></span>
+  </div>
+<div class="container mt-4 mb-5">
+  <div class="row">
+    <!-- Lado Izquierdo: Campos -->
+    <div class="col-md-6">
+      <form>
+        <div class="form-group">
+          <label>Nombres</label>
+          <input type="text" class="form-control"/>
+        </div>
+        <div class="form-group">
+          <label>Apellidos</label>
+          <input type="text" class="form-control"/>
+        </div>
+        <div class="form-group">
+          <label>E-mail</label>
+          <input type="email" class="form-control"/>
+        </div>
+        <div class="form-group">
+          <label>Asunto</label>
+          <textarea class="form-control" rows="2"></textarea>
+        </div>
+<button style="background-color: rgb(9, 114, 23); color: white;">Enviar</button>
+        
+      </form>
+    </div>
+
+    <!--  imagen -->
+    <div class="col-md-6 d-flex align-items-start justify-content-center">
+  <img src="https://definicion.de/wp-content/uploads/2012/01/imagen-vectorial.png" height="60%" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-secondary text-white py-4">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <h6>DIRECCIÓN</h6>
+      <p>Ilave, Puno, Perú</p>
+    </div>
+    <div class="col-md-4">
+      <h6>REDES SOCIALES</h6>
+      <p>
+        <i class="fa fa-github fa-2x mx-2"></i>
+        <i class="fa fa-facebook-square fa-2x mx-2"></i>
+        <i class="fa fa-user-circle fa-2x mx-2"></i>
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h6>ESPECIALIDAD</h6>
+      <p>Web & Mobile<br>Apps Developer</p>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-dark text-white text-center py-2">
+  Copyright © 2025
+</footer>
+
+</body>
+</html>
